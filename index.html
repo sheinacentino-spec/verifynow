@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>OlympianVerify — Olympian ICT Solutions</title>
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Olympian ICT Logo">
+      </div>
+      <div class="brand">OlympianVerify</div>
+      <div class="header-right">
+        <button id="adminBtn" class="admin-access-btn">Admin Access</button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="subscriber">
+      <h2>🔍 Verify a Technician</h2>
+      <div class="search-row">
+        <div class="search-box">
+          <input id="subscriberSearchInput" type="text" placeholder="Enter Technician Name or ID">
+        </div>
+        <button class="btn-verify" onclick="subscriberSearch()">Verify</button>
+      </div>
+      <div id="resultWrap" class="muted">Enter a name or ID to verify.</div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      © 2025 Olympian ICT Solutions — All Rights Reserved.
+    </footer>
+
+  </div>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
